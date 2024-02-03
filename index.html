@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Gestionale caseificio</title>
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="d-flex p-1 mt-2">
                 <img src="" alt="">
                 <h3>Modifica articoli lotti - Codice interno: <span id="visualizza_codice">4720</span>
-                <span id="descrizione_articolo">CARNE DI MANZO</span></h3>
+                    <span id="descrizione_articolo">CARNE DI MANZO</span>
+                </h3>
             </div>
         </div>
     </header>
@@ -23,7 +31,9 @@
         <section id="menu_principale">
             <nav class="navbar navbar-expand-lg p-0">
                 <div class="container">
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,33 +64,51 @@
                     <div class="col-lg-9 myTab">
                         <ul class="nav nav-tabs" id="myTab" role="tablist" style="font-size:0.8em;">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="dati-tab" data-bs-toggle="tab" data-bs-target="#dati-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Dati Articolo</button>
+                                <button class="nav-link active" id="dati-tab" data-bs-toggle="tab"
+                                    data-bs-target="#dati-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">Dati Articolo</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="prezzi-tab" data-bs-toggle="tab" data-bs-target="#prezzi-tab-pane" type="button" role="tab" aria-controls="prezzi-tab-pane" aria-selected="false">Prezzi e listini</button>
+                                <button class="nav-link" id="prezzi-tab" data-bs-toggle="tab"
+                                    data-bs-target="#prezzi-tab-pane" type="button" role="tab"
+                                    aria-controls="prezzi-tab-pane" aria-selected="false">Prezzi e listini</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="foto-tab" data-bs-toggle="tab" data-bs-target="#foto-tab-pane" type="button" role="tab" aria-controls="foto-tab-pane" aria-selected="false">Foto/Descrizioni</button>
+                                <button class="nav-link" id="foto-tab" data-bs-toggle="tab"
+                                    data-bs-target="#foto-tab-pane" type="button" role="tab"
+                                    aria-controls="foto-tab-pane" aria-selected="false">Foto/Descrizioni</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="gestione-tab" data-bs-toggle="tab" data-bs-target="#gestione-tab-pane" type="button" role="tab" aria-controls="gestione-tab-pane" aria-selected="false">Gestione lotti</button>
+                                <button class="nav-link" id="gestione-tab" data-bs-toggle="tab"
+                                    data-bs-target="#gestione-tab-pane" type="button" role="tab"
+                                    aria-controls="gestione-tab-pane" aria-selected="false">Gestione lotti</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="ingredienti-tab" data-bs-toggle="tab" data-bs-target="#ingredienti-tab-pane" type="button" role="tab" aria-controls="ingredienti-tab-pane" aria-selected="false">Ingredienti e allergeni</button>
+                                <button class="nav-link" id="ingredienti-tab" data-bs-toggle="tab"
+                                    data-bs-target="#ingredienti-tab-pane" type="button" role="tab"
+                                    aria-controls="ingredienti-tab-pane" aria-selected="false">Ingredienti e
+                                    allergeni</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="storico-tab" data-bs-toggle="tab" data-bs-target="#storico-tab-pane" type="button" role="tab" aria-controls="storico-tab-pane" aria-selected="false">Storico prezzi di acquisto</button>
+                                <button class="nav-link" id="storico-tab" data-bs-toggle="tab"
+                                    data-bs-target="#storico-tab-pane" type="button" role="tab"
+                                    aria-controls="storico-tab-pane" aria-selected="false">Storico prezzi di
+                                    acquisto</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="starticolo-tab" data-bs-toggle="tab" data-bs-target="#starticolo-tab-pane" type="button" role="tab" aria-controls="starticolo-tab-pane" aria-selected="false">Storico Articolo</button>
+                                <button class="nav-link" id="starticolo-tab" data-bs-toggle="tab"
+                                    data-bs-target="#starticolo-tab-pane" type="button" role="tab"
+                                    aria-controls="starticolo-tab-pane" aria-selected="false">Storico Articolo</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="datiE-tab" data-bs-toggle="tab" data-bs-target="#datiE-tab-pane" type="button" role="tab" aria-controls="datiE-tab-pane" aria-selected="false">Dati E-Commerce</button>
+                                <button class="nav-link" id="datiE-tab" data-bs-toggle="tab"
+                                    data-bs-target="#datiE-tab-pane" type="button" role="tab"
+                                    aria-controls="datiE-tab-pane" aria-selected="false">Dati E-Commerce</button>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>    
+            </div>
         </section>
         <section id="tab_dati_articoli">
             <div class="container bg-white">
@@ -90,273 +118,282 @@
                             <div class="tab-pane fade show active" id="dati-tab-pane" role="tabpanel" aria-labelledby="dati-tab" tabindex="0">
                                 <div class="row">
                                     <div class="col-lg-9 col-sm-12">
-                                        <div class="card p-3 border-0 shadow-lg mb-sm-3" style="height:650px; overflow:auto;">
+                                        <div class="card p-3 border-0 shadow-lg mb-sm-3"
+                                            style="height:650px; overflow:auto;">
                                             <div class="row">
                                                 <div id="heading-article-section" class="p-1">
-                                                <h3 class="fw-bolder">Dati articolo</h3>
-                                            </div>
-                                            <div class="col-lg-12 col-sm-12">
-                                                <div class="row">
-                                                    <div class="col-3">
-                                                        <i class="fa-solid fa-tags fs-1" style="color: #e5dec5;"></i>
-                                                    </div>
+                                                    <h3 class="fw-bolder">Dati articolo</h3>
                                                 </div>
-                                                <div class="row gap-2 mt-3">
-                                                    <div class="col-12">
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <span class="d-flex flex-lg-row flex-sm-column gap-lg-3 align-items-lg-center">
-                                                                    <label for="name" class="form-label fw-bold">Nome</label>
-                                                                       <input type="text" class="form-control form-control-sm w-100" id="name">
-                                                                </span>
-                                                            </div>
+                                                <div class="col-lg-12 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <i class="fa-solid fa-tags fs-1" style="color: #e5dec5;"></i>
                                                         </div>
-                                                        <div class="row mt-3">
-                                                            <div class="col-lg-9 col-sm-12 mb-sm-3">
-                                                                <span class="d-flex flex-column gap-2">
-                                                                    <span class="d-flex flex-lg-row flex-sm-column align-items-lg-center gap-lg-3">
-                                                                        <label for="fornitore" class="form-label fw-bold">Fornitore</label> 
-                                                                        <select class="form-select form-select-sm" name="fornitori" id="fornitori">
-                                                                            <option value="1">ragione sociale 10</option>
-                                                                        </select>
+                                                    </div>
+                                                    <div class="row gap-2 mt-3">
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <span class="d-flex flex-lg-row flex-sm-column gap-lg-3 align-items-lg-center">
+                                                                        <label for="name" class="form-label fw-bold">Nome</label>
+                                                                        <input type="text" class="form-control form-control-sm w-100" id="name">
                                                                     </span>
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-lg-3 col-sm-12">
-                                                                <button type="button" class="btn btn-sm btn-success mb-3 w-100" style="font-size:0.8em;">Altri fornitori(0)</button>  
-                                                            </div>
-                                                        </div>
-                                                        <div class="row align-items-lg-center">
-                                                            <div class="col-lg-8 col-sm-12 mb-lg-0 mb-sm-3">
-                                                                <span class="d-flex flex-lg-row flex-sm-column align-items-lg-center gap-3">
-                                                                    <span class="d-flex flex-lg-row flex-sm-column align-items-center gap-3"> 
-                                                                       <label for="fornitore" class="form-label fw-bold w-100">Codice articolo fornitore</label>    
-                                                                        <input type="text" class="form-control form-control-sm w-100" id="codice_articolo_fornitore" placeholder="23232323"> 
-                                                                    </span>
-                                                                    <span>
-                                                                        <button type="button" class="btn btn-sm btn-secondary w-100">Copia>></button>
-                                                                    </span>
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-lg-4 col-sm-12">
-                                                                <span class="d-flex flex-lg-row flex-sm-column align-items-center">
-                                                                    <label for="fornitore" class="form-label fw-bold w-100">Codice Articolo</label>
-                                                                    <input type="text" class="form-control form-control-sm w-100" id="codice_articolo">
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mt-3">
-                                                            <div class="col-12">
-                                                                <div class="row">
-                                                                    <div class="col-lg-2 col-sm-12">
-                                                                        <label for="name" class="form-label fw-bold">Codice EAN-UPC</label>
-                                                                    </div> 
-                                                                    <div class="col-lg-10 col-sm-12">
-                                                                        <input type="text" class="form-control form-control-sm" id="name">
-                                                                    </div>
                                                                 </div>
-                                                            </div>    
-                                                        </div>    
-                                                        <div class="row mt-3">
-                                                            <div class="col-lg-2 col-sm-12">
-                                                                <label for="fornitore" class="form-label fw-bold">Categoria merce</label>
-                                                            </div> 
-                                                            <div class="col-lg-10 col-sm-12">
-                                                                <select class="form-select form-select-sm" name="fornitori" id="fornitori" >
-                                                                    <option value="1">Alimentari -> CARNI</option>
-                                                                </select>
-                                                            </div>      
-                                                        </div>                                                                
-                                                        <div class="row mt-3 align-items-lg-center">
-                                                            <div class="col-lg-6 col-sm-12 mb-lg-0 mb-sm-3">
-                                                                <span class="d-flex align-items-center">
-                                                                    <label for="fornitore" class="form-label fw-bold w-50">Sede Magazzino</label>    
-                                                                    <select class="ms-lg-4 form-select form-select-sm w-100" name="sede_magazzino" id="sede_magazzino">
-                                                                        <option value="1">Principale</option>
-                                                                    </select>
-                                                                </span>
                                                             </div>
-                                                            <div class="col-lg-6 col-sm-12">
-                                                                <span class="d-flex flex-lg-row flex-sm-column align-items-lg-center">
-                                                                    <label for="ub_magazzino" class="form-label fw-bold w-100">Ubicazione a magazzino</label>
-                                                                     <input type="text" class="form-control form-control-sm w-100" id="ub_magazzino">
-                                                                </span>
-                                                            </div>   
-                                                        </div>        
-                                                        <div class="row mt-3">
-                                                            <div class="col-lg-6 col-sm-12 mb-sm-3">
-                                                                    <span class="d-flex flex-lg-row flex-sm-column align-items-lg-center gap-3">
-                                                                        <label for="marca" class="form-label fw-bold">Marca</label> 
-                                                                        <select class="form-select form-select-sm mb-lg-0 mb-sm-2 w-100" name="fornitori" id="fornitori" style="width:296px">
-                                                                            <option value="1"><<span>Scegli</span>></option>
-                                                                        </select>
-                                                                        <span>
-                                                                            <button type="button" class="btn btn-sm btn-secondary w-100" style="font-size:0.8em;">Nuova</button>  
+                                                            <div class="row mt-3">
+                                                                <div class="col-lg-9 col-sm-12 mb-sm-3">
+                                                                    <span class="d-flex flex-column gap-2">
+                                                                        <span class="d-flex flex-lg-row flex-sm-column align-items-lg-center gap-lg-3">
+                                                                            <label for="fornitore" class="form-label fw-bold">Fornitore</label>
+                                                                            <select class="form-select form-select-sm" name="fornitori" id="fornitori">
+                                                                                <option value="1">ragione sociale 10</option>
+                                                                            </select>
                                                                         </span>
                                                                     </span>
-                                                            </div>      
-                                                        </div>     
-                                                        <div class="row">
-                                                            <div class="col-lg-4 col-sm-12">
-                                                                <span class="d-flex flex-lg-row flex-sm-column align-items-lg-center">
-                                                                    <label for="peso" class="form-label fw-bold w-100">Peso in grammi</label>
-                                                                    <input type="text" class="ms-lg-5 form-control form-control-sm" id="peso" placeholder="0">    
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mt-4">
-                                                            <span class="d-flex align-items-center gap-2">
-                                                                <span class="d-flex gap-2 align-items-center">
-                                                                    <i class="fa-solid fa-cart-shopping" style="color: #d57e1a;"></i>
-                                                                </span>
-                                                                <span>
-                                                                    <input type="checkbox" class="form-check-input" value="" id="esporta">
-                                                                </span>
-                                                                <span>
-                                                                    <label for="esporta" class="form-label">Esporta sul negozio virtuale</label>
-                                                                </span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="row mt-2">
-                                                            <div class="col-12">
-                                                                <div class="form-floating">
-                                                                    <textarea class="form-control" name="comments" id="comments" cols="10" rows="10" style="height:100px;"></textarea>
-                                                                    <label for="comments">Note</label>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-12">
+                                                                    <button type="button" class="btn btn-sm btn-success mb-3 w-100"
+                                                                        style="font-size:0.8em;">Altri fornitori(0)</button>
                                                                 </div>
                                                             </div>
-                                                        </div>        
-                                                    </div>     
-                                                </div>        
-                                            </div>               
-                                        </div>            
-                                    </div> 
-                                </div>
-                                <!-- Opzioni aggiuntive - Sidebar Laterale -->
-                                <div class="col-lg-3 col-sm-12 mb-lg-0 mb-sm-1">
-                                    <div class="card shadow-lg p-3 bg-opzioni-aggiuntive" style="height:650px; overflow:hidden;">
-                                        <h3 class="fw-bold">Opzioni Aggiuntive</h3>
-                                        <!--contenitore voce-->
-                                        <div class="mb-3">
-                                          <input type="checkbox" name="articolo_visibile" id="Articolo_visibile" class="me-2 form-check-input"/>
-                                          <label for="articolo_visibile"></label>
-                                          Articolo Visibile
-                                        </div>
-                                  
-                                        <!--contenitore voce-->
-                                        <div class="mb-3">
-                                          <input type="checkbox" name="articolo_riordinabile" id="articolo_riordinabile" class="me-2 form-check-input" />
-                                            <label for="articolo_riordinabile"> Articolo Riordinabile <br />
-                                              (Tramite ordine fornitore)
-                                            </label>
-                                        </div>
-                                  
-                                        <!--contenitore voce-->
-                                        <div class="mb-3">
-                                          <input type="checkbox" name="articolo_non_scontrinabile" id="articolo_non_scontrinabile" class="me-2 form-check-input"/>
-                                          Articolo non scontrinabile
-                                        </div>
-                                  
-                                        <!--contenitore voce-->
-                                        <div class="d-flex mb-3">
-                                          <input type="checkbox" name="articolo_cassa_facile" id="articolo_cassa_facile" class="me-2 form-check-input"/>
-                                          Visualizza l'articolo nella <br />
-                                          cassa facile e nei piatti
-                                        </div>
-                                  
-                                        <!--contenitore voce-->
-                                        <div class="d-flex mb-3">
-                                          <input type="checkbox" name="articolo_preferito_cassa_facile" id="articolo_preferito_cassa_facile" class="me-2 form-check-input"/>
-                                          Visualizza l'articolo tra i <br />
-                                          preferiti nella cassa facile
-                                        </div>
-                                  
-                                        <!--contenitore voce-->
-                                        <div class="d-flex mb-3">
-                                          Colore cassa facile
-                                          <select name="colore_cassa" id="colore_cassa" class="ms-1">
-                                            <option value="" selected></option>
-                                            <option value="verde">verde</option>
-                                            <option value="rosso">rosso</option>
-                                          </select>
-                                        </div>
-                                  
-                                        <!--contenitore voce-->
-                                        <div class="d-flex mb-1 fle">
-                                          <input type="checkbox" name="articolo_in_arrivo" id="articolo_in_arrivo" class="me-2 form-check-input"/>
-                                          In arrivo il
-                                        </div>
-                                        <div>
-                                          <input class="w-date-picker ms-4 form-control" type="date" name="" id="data_arrivo_articolo" disabled/>
-                                          <p class="ms-4 mt-1">Solo per giacenza uguale a 0</p>
-                                        </div>
-                                        <div class="input-group mb-3 d-flex flex-column">
-                                          <label for="provenienza">Provenienza</label>
-                                          <select name="provenienza" class="form-select w-100" id="provenienza">
-                                            <option selected></option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                          </select>
-                                        </div>
-                                  
-                                        <div class="input-group mb-3 d-flex flex-column">
-                                          <label for="gusto">Gusto</label>
-                                          <select name="gusto" class="form-select w-100" id="gusto">
-                                            <option selected></option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                          </select>
+                                                            <div class="row align-items-lg-center">
+                                                                <div class="col-lg-8 col-sm-12 mb-lg-0 mb-sm-3">
+                                                                    <span class="d-flex flex-lg-row flex-sm-column align-items-lg-center gap-3">
+                                                                        <span class="d-flex flex-lg-row flex-sm-column align-items-center gap-3">
+                                                                            <label for="fornitore" class="form-label fw-bold w-100">Codice articolo fornitore</label>
+                                                                            <input type="text" class="form-control form-control-sm w-100"
+                                                                                id="codice_articolo_fornitore" placeholder="23232323">
+                                                                        </span>
+                                                                        <span>
+                                                                            <button type="button" class="btn btn-sm btn-secondary w-100">Copia>></button>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="col-lg-4 col-sm-12">
+                                                                    <span class="d-flex flex-lg-row flex-sm-column align-items-center">
+                                                                        <label for="fornitore" class="form-label fw-bold w-100">Codice Articolo</label>
+                                                                        <input type="text" class="form-control form-control-sm w-100" id="codice_articolo">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-3">
+                                                                <div class="col-12">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-2 col-sm-12">
+                                                                            <label for="name" class="form-label fw-bold">Codice EAN-UPC</label>
+                                                                        </div>
+                                                                        <div class="col-lg-10 col-sm-12">
+                                                                            <input type="text" class="form-control form-control-sm" id="name">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-3">
+                                                                <div class="col-lg-2 col-sm-12">
+                                                                    <label for="fornitore" class="form-label fw-bold">Categoria merce</label>
+                                                                </div>
+                                                                <div class="col-lg-10 col-sm-12">
+                                                                    <select class="form-select form-select-sm" name="fornitori" id="fornitori">
+                                                                        <option value="1">Alimentari -> CARNI</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-3 align-items-lg-center">
+                                                                <div class="col-lg-6 col-sm-12 mb-lg-0 mb-sm-3">
+                                                                    <span class="d-flex align-items-center">
+                                                                        <label for="fornitore" class="form-label fw-bold w-50">Sede Magazzino</label>
+                                                                        <select class="ms-lg-4 form-select form-select-sm w-100" name="sede_magazzino" id="sede_magazzino">
+                                                                            <option value="1">Principale</option>
+                                                                        </select>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="col-lg-6 col-sm-12">
+                                                                    <span class="d-flex flex-lg-row flex-sm-column align-items-lg-center">
+                                                                        <label for="ub_magazzino" class="form-label fw-bold w-100">Ubicazione a magazzino</label>
+                                                                        <input type="text"
+                                                                            class="form-control form-control-sm w-100"
+                                                                            id="ub_magazzino">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-3">
+                                                                <div class="col-lg-6 col-sm-12 mb-sm-3">
+                                                                    <span
+                                                                        class="d-flex flex-lg-row flex-sm-column align-items-lg-center gap-3">
+                                                                        <label for="marca" class="form-label fw-bold">Marca</label>
+                                                                        <select class="form-select form-select-sm mb-lg-0 mb-sm-2 w-100" name="fornitori" id="fornitori" style="width:296px"> 
+                                                                            <option value="1"><<span>Scegli</span>></option>
+                                                                    </select>
+                                                                    <span>
+                                                                        <button type="button" class="btn btn-sm btn-secondary w-100" style="font-size:0.8em;">Nuova</button>
+                                                                    </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-sm-12">
+                                                                    <span
+                                                                        class="d-flex flex-lg-row flex-sm-column align-items-lg-center">
+                                                                        <label for="peso" class="form-label fw-bold w-100">Peso in grammi</label>
+                                                                        <input type="text" class="ms-lg-5 form-control form-control-sm" id="peso" placeholder="0">
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-4">
+                                                                <span class="d-flex align-items-center gap-2">
+                                                                    <span class="d-flex gap-2 align-items-center">
+                                                                        <i class="fa-solid fa-cart-shopping" style="color: #d57e1a;"></i>
+                                                                    </span>
+                                                                    <span>
+                                                                        <input type="checkbox" class="form-check-input" value="" id="esporta">
+                                                                    </span>
+                                                                    <span>
+                                                                        <label for="esporta" class="form-label">Esporta sul negozio virtuale</label>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="row mt-2">
+                                                                <div class="col-12">
+                                                                    <div class="form-floating">
+                                                                        <textarea class="form-control" name="comments" id="comments" cols="10" rows="10" style="height:100px;"></textarea>
+                                                                        <label for="comments">Note</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <!-- Opzioni aggiuntive - Sidebar Laterale -->
+                                    <div class="col-lg-3 col-sm-12 mb-lg-0 mb-sm-1">
+                                        <div class="card shadow-lg p-3 bg-opzioni-aggiuntive" style="height:650px; overflow:hidden;">
+                                            <h3 class="fw-bold">Opzioni Aggiuntive</h3>
+                                            <!--contenitore voce-->
+                                            <div class="input-group mb-3">
+                                                <input type="checkbox" name="articolo_visibile" id="articolo_visibile" class="me-2 form-check-input" />
+                                                <label for="articolo_visibile">Articolo Visibile</label>
+                                            </div>
+
+                                            <!--contenitore voce-->
+                                            <div class="input-group mb-3">
+                                                <input type="checkbox" name="articolo_riordinabile" id="articolo_riordinabile" class="me-2 form-check-input" />
+                                                <label for="articolo_riordinabile">Articolo Riordinabile <br />
+                                                    (Tramite ordine fornitore)
+                                                </label>
+                                            </div>
+
+                                            <!--contenitore voce-->
+                                            <div class="input-group mb-3">
+                                                <input type="checkbox" name="articolo_non_scontrinabile"
+                                                    id="articolo_non_scontrinabile" class="me-2 form-check-input" />
+                                                <label for="articolo_non_scontrinabile">Articolo non scontrinabile</label>
+                                            </div>
+
+                                            <!--contenitore voce-->
+                                            <div class="d-flex mb-3">
+                                                <input type="checkbox" name="articolo_cassa_facile" id="articolo_cassa_facile" class="me-2 form-check-input" />
+                                                <label for="articolo_cassa_facile">Visualizza l'articolo nella <br />
+                                                    cassa facile e nei piatti</label>
+                                            </div>
+
+                                            <!--contenitore voce-->
+                                            <div class="d-flex mb-3">
+                                                <input type="checkbox" name="articolo_preferito_cassa_facile"
+                                                    id="articolo_preferito_cassa_facile" class="me-2 form-check-input" />
+                                                    <label for="articolo_preferito_cassa_facile">Visualizza l'articolo tra i <br />
+                                                preferiti nella cassa facile</label>
+                                            </div>
+
+                                            <!--contenitore voce-->
+                                            <div class="d-flex mb-3">
+                                                <label for="">Colore cassa facile</label>
+                                                <select name="colore_cassa" id="colore_cassa" class="ms-1">
+                                                    <option value="seleziona">Sel..</option>
+                                                    <option value="verde">verde</option>
+                                                    <option value="rosso">rosso</option>
+                                                </select>
+                                            </div>
+
+                                            <!--contenitore voce-->
+                                            <div class="d-flex mb-1">
+                                                <input type="checkbox" name="articolo_in_arrivo" id="articolo_in_arrivo"
+                                                    class="me-2 form-check-input" />
+                                                In arrivo il
+                                            </div>
+                                            <div>
+                                                <input class="w-date-picker ms-4 form-control" type="date" name=""
+                                                    id="data_arrivo_articolo" disabled />
+                                                <p class="ms-4 mt-1">Solo per giacenza uguale a 0</p>
+                                            </div>
+                                            <div class="input-group mb-3 d-flex flex-column">
+                                                <label for="provenienza">Provenienza</label>
+                                                <select name="provenienza" class="form-select w-100" id="provenienza">
+                                                    <option selected></option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="input-group mb-3 d-flex flex-column">
+                                                <label for="gusto">Gusto</label>
+                                                <select name="gusto" class="form-select w-100" id="gusto">
+                                                    <option selected></option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="container bg-white mt-1">
                                         <!-- Tab Giacenza -->
                                         <div class="row">
                                             <div class="col-lg-6 col-sm-12">
-                                                <div class="shadow-lg p-3 sfondo_giacenza blocco_quattro" style="height:274px; overflow:hidden;">
-                                                    <h3 class="fw-bold">Giacenza</h3>
-                                                    <div class="row">
+                                                <div class="shadow-lg p-3 sfondo_giacenza blocco_quattro mb-lg-0 mb-sm-2" style="height:274px; overflow:auto;">
+                                                    <h3 class="fw-bold mt-1">Giacenza</h3>
+                                                    <div class="row mx-1">
                                                         <div class="col-6">
                                                             <div class="d-flex justify-content-between mb-3 gap-1">
                                                                 <span class="text-end w-100 me-1">
                                                                     <label for="giacenza" class="form-label">Giacenza</label>
                                                                 </span>
-                                                                <input type="number" class="form-control form-control-sm" id="giacenza" placeholder="0">
-                                                            </div>
+                                                                <input type="number" class="form-control form-control-sm w-50" id="giacenza" placeholder="0">
+                                                            </div>                                                   
                                                             <div class="d-flex justify-content-between mb-3 gap-1">
                                                                 <span class="text-end w-100 me-1">
                                                                     <label for="scorta" class="form-label">Scorta minima</label>
                                                                 </span>
-                                                                <input class="form-control form-control-sm" type="number" id="scorta" placeholder="0">
+
+                                                                <input class="form-control form-control-sm w-50" type="number" id="scorta" placeholder="0">
                                                             </div>
-                                                            <div class="d-flex mb-3 align-items-center gap-1">
+                                                            <div class="d-flex gap-1 mb-3 align-items-center gap-1">
                                                                 <span class="text-end w-100 me-1">
                                                                     <label for="quantitativo_minimo_ordinabile" class="form-label">Quantità minima vendibile e ordinabile</label>
                                                                 </span>
-                                                                <input style="height: 30px;" class="form-control form-control-sm" type="number"
-                                                                    id="quantitativo_minimo_ordinabile" placeholder="0">
+                                                                <input style="height: 30px;" class="form-control form-control-sm w-50" type="text" id="quantitativo_minimo_ordinabile" placeholder="0">
                                                             </div>
-                                                            <div class="d-flex gap-1 align-items-center mb-2 gap-1">
+                                                            <div class="d-flex gap-1 align-items-center gap-1">
                                                                 <span class="text-end w-100 me-1">
                                                                     <label for="quantitativo_per_ogni_collo" class="form-label">Quantità per ogni collo</label>
                                                                 </span>
-                                                                <input style="height: 30px;" class="form-control form-control-sm" type="number"
-                                                                    id="quantitativo_per_ogni_collo" placeholder="0">
+                                                                <input style="height: 30px;" class="form-control form-control-sm w-50" type="number" id="quantitativo_per_ogni_collo" placeholder="0">
                                                             </div>
                                                         </div>
                                                         <div class="col-4">
-                                                            <div class="d-flex justify-content-between mb-3 gap-1">
+                                                            <div class="d-flex gap-1 align-items-center gap-1 mb-3">
                                                                 <span class="text-end w-100 me-1">
                                                                     <label for="prenotati" class="form-label">Prenotati</label>
                                                                 </span>
-                                                                <input class="form-control form-control-sm" type="text" id="prenotati" disabled placeholder="0">
+                                                                <input class="form-control form-control-sm" type="text" disabled id="prenotati" placeholder="0">
                                                             </div>
-                                                            <div class="d-flex justify-content-between gap-1">
+                                                            <div class="d-flex gap-1 align-items-center gap-1">
                                                                 <span class="text-end w-100 me-1">
                                                                     <label for="riordino" class="form-label">In riordino</label>
                                                                 </span>
-                                                                <input class="form-control form-control-sm" type="text" id="riordino" disabled placeholder="0">
+                                                                <input class="form-control form-control-sm" type="text" style="height: 30px;" id="riordino" disabled placeholder="0">
                                                             </div>
                                                         </div>
                                                         <div class="col-2">
@@ -366,28 +403,34 @@
                                                 </div>
                                             </div>
                                             <!-- Tab Unità di misura-->
-                                            <div class="col-lg-6 col-sm-12 mb-4">
+                                            <div class="col-lg-6 col-sm-12">
                                                 <div class="shadow-lg col-12 p-3 sfondo_un_mis blocco_quattro">
                                                     <h3 class="fw-bold ">Unità di misura</h3>
-                                                    <div class="row align-items-start" style="height:60px; overflow:hidden;">
+                                                    <div class="row align-items-start"
+                                                        style="height:60px; overflow:auto;">
                                                         <div class="col-12">
-                                                            <span class="d-flex align-items-center justify-content-around gap-2 w-100">
+                                                            <span
+                                                                class="d-flex align-items-center justify-content-around gap-2 w-100">
                                                                 <span>
-                                                                    <label for="misura" class="form-label">Unità di misura</label>
+                                                                    <label for="misura" class="form-label">Unità di
+                                                                        misura</label>
                                                                 </span>
                                                                 <span class="w-25">
-                                                                    <select name="misure" id="misure" class="form-select form-select-sm">
+                                                                    <select name="misure" id="misure"
+                                                                        class="form-select form-select-sm">
                                                                         <option value="1">Pz</option>
                                                                         <option value="2">N.</option>
                                                                         <option value="3">L.</option>
                                                                     </select>
                                                                 </span>
                                                                 <span>
-                                                                    <label for="misure_vendita" class="form-label">Unità di misura di vendita <br>(se
+                                                                    <label for="misure_vendita" class="form-label">Unità
+                                                                        di misura di vendita <br>(se
                                                                         differente)</label>
                                                                 </span>
                                                                 <span class="w-25">
-                                                                    <select name="misure_vendita" id="misure_vendita" class="form-select form-select-sm">
+                                                                    <select name="misure_vendita" id="misure_vendita"
+                                                                        class="form-select form-select-sm">
                                                                         <option value="1">Invariata</option>
                                                                         <option value="2">2</option>
                                                                         <option value="3">3</option>
@@ -395,99 +438,95 @@
                                                                 </span>
                                                             </span>
                                                         </div>
-                                
                                                     </div>
-                                
-                                                </div>
-                                
+                                                </div>    
                                                 <!-- Tab Conversione ad articolo singolo -->
-                                                <div class="shadow-lg col-12 p-3 mt-1 sfondo_convers blocco_quattro"
-                                                    style="height:150px; overflow:hidden;">
-                                                    <h3 class="fw-bold ">Conversione da confezione ad articolo singolo</h3>
+                                                <div class="shadow-lg col-12 p-3 mt-1 sfondo_convers blocco_quattro" style="height:151px; overflow:auto;">
+                                                    <h3 class="fw-bold">Conversione da confezione ad articolo singolo</h3>
                                                     <div class="row align-items-start">
                                                         <div class="col-12">
                                                             <span class="d-flex align-items-center justify-content-between gap-2 ">
-                                                                <span class="">
-                                                                    <label for="misura" class="form-label me-lg-4">Codice articolo della
-                                                                        confezione</label>
+                                                                <span>
+                                                                    <label for="misura" class="form-label me-lg-4">Codice articolo della confezione</label>
                                                                 </span>
                                                                 <span class="w-25">
                                                                     <input type="text" class="form-control form-control-sm">
                                                                 </span>
                                                                 <span>
-                                                                    <button type="button" class="btn btn-sm btn-secondary">Cerca confezione</button>
+                                                                    <button type="button" class="btn btn-sm btn-secondary" style="height:30px;">Cerca confezione</button>
                                                                 </span>
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="row align-items-start mt-2">
+                                                        <div id="info_uno" class="border border-2 bg-white bg-white text-center w-25 p-2 shadow" style="position:
+                                                        absolute; right: 0; display: none; z-index:10; margin-right: 100px; margin-top: -100px">
+                                                            <p>Inserisci il codice articolo della confezione per cercare il prodotto da convertire in singolo articolo.</p>
+                                                        </div>
                                                         <div class="col-12">
                                                             <span class="d-flex align-items-center justify-content-between gap-2 w-100">
-                                                                <span class="">
-                                                                    <label for="misura" class="form-label">1 unità della confezione corrisponde
-                                                                        a</label>
+                                                                <span class="w-100">
+                                                                    <label for="misura" class="form-label">1 unità della confezione corrisponde a</label>
                                                                 </span>
                                                                 <span class="w-25">
                                                                     <input type="text" class="form-control form-control-sm">
                                                                 </span>
-                                                                <span class>
+                                                                <span class="w-75">
                                                                     <label for="" class="form-label">unità di questo articolo</label>
+                                                                </span>
+                                                                <span>
+                                                                    <a href="#" onmouseover="document.getElementById('info_uno').style.display='block'"
+                                                                        onmouseleave="document.getElementById('info_uno').style.display='none'" style="z-index: 1;">
+                                                                        <i class="fa-solid fa-circle-question fs-2" style="color: #751e7b;"></i></a>
                                                                 </span>
                                                             </span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                
-                                
                                         </div>
                                     </div>
-                                   
+                                </div>
                             </div>
-                            
-                        </div>    
-                        <div class="tab-pane fade" id="prezzi-tab-pane" role="tabpanel" aria-labelledby="prezzi-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="foto-tab-pane" role="tabpanel" aria-labelledby="foto-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="gestione-tab-pane" role="tabpanel" aria-labelledby="gestione-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="ingredienti-tab-pane" role="tabpanel" aria-labelledby="ingredienti-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="storico-tab-pane" role="tabpanel" aria-labelledby="storico-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="starticolo-tab-pane" role="tabpanel" aria-labelledby="starticolo-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="datiE-tab-pane" role="tabpanel" aria-labelledby="datiE-tab" tabindex="0">...</div>    
-                    </div>           
-                </div>        
-            </div>   
-        </section>
-      
+                            <div class="tab-pane fade" id="prezzi-tab-pane" role="tabpanel" aria-labelledby="prezzi-tab"
+                                tabindex="0">...</div>
+                            <div class="tab-pane fade" id="foto-tab-pane" role="tabpanel" aria-labelledby="foto-tab"
+                                tabindex="0">...</div>
+                            <div class="tab-pane fade" id="gestione-tab-pane" role="tabpanel"
+                                aria-labelledby="gestione-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="ingredienti-tab-pane" role="tabpanel"
+                                aria-labelledby="ingredienti-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="storico-tab-pane" role="tabpanel"
+                                aria-labelledby="storico-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="starticolo-tab-pane" role="tabpanel"
+                                aria-labelledby="starticolo-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="datiE-tab-pane" role="tabpanel" aria-labelledby="datiE-tab"
+                                tabindex="0">...</div>
+                        </div>   
+                    </div>    
+                </div>    
+        </section>        
         <!-- Salva - Stampa - Annulla - Faq -->
         <section id="footer">
             <div class="container mt-3 mb-5">
-                <div class="row text-center">
-                    <div class="col-lg-4 col-sm-7">
-                        <span class="d-flex w-100">
-                            <span class="d-flex align-items-center gap-3 me-lg-auto">
-                                <button type="button" class="btn btn-sm btn-success" id="salva">Salva</button>
+                <div class="row">
+                    <span class="d-flex align-items-center justify-content-between">
+                        <span class="d-flex align-items-center gap-3 justify-content-lg-end">
+                            <button type="button" class="btn btn-sm btn-success" id="salva">Salva</button>
                                 <button type="button" class="btn btn-sm btn-secondary pt-1 pb-1 ps-2 pe-2" id="stampa">
                                     <i class="fa-solid fa-print" style="color: #ffffff;"></i>
                                     <span>Stampa etichetta</span>
                                 </button>
-                            </span>
                         </span>
-                    </div>
-                    <div class="col-lg-4 col-sm-2"></div>
-                    <div class="col-lg-4 col-sm-3">
-                        <span class="d-flex w-100">
-                            <span class="d-flex align-items-center gap-3 ms-lg-auto">
-                                <i class="fa-solid fa-circle-question fs-2" style="color: #751e7b;"></i>
-                                <button type="button" class="btn btn-sm btn-secondary ps-3 pe-3">Annulla</button>
-                            </span>
+                        <span class="d-flex align-items-center gap-3 justify-content-lg-end">
+                            <i class="fa-solid fa-circle-question fs-2" style="color: #751e7b;"></i>
+                            <button type="button" class="btn btn-sm btn-secondary ps-3 pe-3">Annulla</button>
                         </span>
-                    </div>
+                    </span>
                 </div>
             </div>
         </section>
-    </main> 
+    </main>
 </body>
-<script src="assets/js/script.js"></script>
-</html>      
-        
-          
+    <script src="assets/js/script.js"></script>
+</html>
