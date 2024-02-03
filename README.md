@@ -1,3 +1,3 @@
 Progetto stage Front End Developer Febbraio 2024
-Contributori:
+<p>Contributori:</p>
 Vincenzo - Giuseppe - Omar - Massimo
