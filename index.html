@@ -309,7 +309,140 @@
                                           </select>
                                         </div>
                                     </div>
-                                </div>    
+                                </div>
+                                    <div class="container bg-white mt-1">
+                                        <!-- Tab Giacenza -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-12">
+                                                <div class="shadow-lg p-3 sfondo_giacenza blocco_quattro" style="height:274px; overflow:hidden;">
+                                                    <h3 class="fw-bold">Giacenza</h3>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex justify-content-between mb-3 gap-1">
+                                                                <span class="text-end w-100 me-1">
+                                                                    <label for="giacenza" class="form-label">Giacenza</label>
+                                                                </span>
+                                                                <input type="number" class="form-control form-control-sm" id="giacenza" placeholder="0">
+                                                            </div>
+                                                            <div class="d-flex justify-content-between mb-3 gap-1">
+                                                                <span class="text-end w-100 me-1">
+                                                                    <label for="scorta" class="form-label">Scorta minima</label>
+                                                                </span>
+                                                                <input class="form-control form-control-sm" type="number" id="scorta" placeholder="0">
+                                                            </div>
+                                                            <div class="d-flex mb-3 align-items-center gap-1">
+                                                                <span class="text-end w-100 me-1">
+                                                                    <label for="quantitativo_minimo_ordinabile" class="form-label">Quantità minima vendibile e ordinabile</label>
+                                                                </span>
+                                                                <input style="height: 30px;" class="form-control form-control-sm" type="number"
+                                                                    id="quantitativo_minimo_ordinabile" placeholder="0">
+                                                            </div>
+                                                            <div class="d-flex gap-1 align-items-center mb-2 gap-1">
+                                                                <span class="text-end w-100 me-1">
+                                                                    <label for="quantitativo_per_ogni_collo" class="form-label">Quantità per ogni collo</label>
+                                                                </span>
+                                                                <input style="height: 30px;" class="form-control form-control-sm" type="number"
+                                                                    id="quantitativo_per_ogni_collo" placeholder="0">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="d-flex justify-content-between mb-3 gap-1">
+                                                                <span class="text-end w-100 me-1">
+                                                                    <label for="prenotati" class="form-label">Prenotati</label>
+                                                                </span>
+                                                                <input class="form-control form-control-sm" type="text" id="prenotati" disabled placeholder="0">
+                                                            </div>
+                                                            <div class="d-flex justify-content-between gap-1">
+                                                                <span class="text-end w-100 me-1">
+                                                                    <label for="riordino" class="form-label">In riordino</label>
+                                                                </span>
+                                                                <input class="form-control form-control-sm" type="text" id="riordino" disabled placeholder="0">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <button class="btn btn-sm btn-secondary" id="verifica">Verifica</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Tab Unità di misura-->
+                                            <div class="col-lg-6 col-sm-12 mb-4">
+                                                <div class="shadow-lg col-12 p-3 sfondo_un_mis blocco_quattro">
+                                                    <h3 class="fw-bold ">Unità di misura</h3>
+                                                    <div class="row align-items-start" style="height:60px; overflow:hidden;">
+                                                        <div class="col-12">
+                                                            <span class="d-flex align-items-center justify-content-around gap-2 w-100">
+                                                                <span>
+                                                                    <label for="misura" class="form-label">Unità di misura</label>
+                                                                </span>
+                                                                <span class="w-25">
+                                                                    <select name="misure" id="misure" class="form-select form-select-sm">
+                                                                        <option value="1">Pz</option>
+                                                                        <option value="2">N.</option>
+                                                                        <option value="3">L.</option>
+                                                                    </select>
+                                                                </span>
+                                                                <span>
+                                                                    <label for="misure_vendita" class="form-label">Unità di misura di vendita <br>(se
+                                                                        differente)</label>
+                                                                </span>
+                                                                <span class="w-25">
+                                                                    <select name="misure_vendita" id="misure_vendita" class="form-select form-select-sm">
+                                                                        <option value="1">Invariata</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                    </select>
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                
+                                                    </div>
+                                
+                                                </div>
+                                
+                                                <!-- Tab Conversione ad articolo singolo -->
+                                                <div class="shadow-lg col-12 p-3 mt-1 sfondo_convers blocco_quattro"
+                                                    style="height:150px; overflow:hidden;">
+                                                    <h3 class="fw-bold ">Conversione da confezione ad articolo singolo</h3>
+                                                    <div class="row align-items-start">
+                                                        <div class="col-12">
+                                                            <span class="d-flex align-items-center justify-content-between gap-2 ">
+                                                                <span class="">
+                                                                    <label for="misura" class="form-label me-lg-4">Codice articolo della
+                                                                        confezione</label>
+                                                                </span>
+                                                                <span class="w-25">
+                                                                    <input type="text" class="form-control form-control-sm">
+                                                                </span>
+                                                                <span>
+                                                                    <button type="button" class="btn btn-sm btn-secondary">Cerca confezione</button>
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-start mt-2">
+                                                        <div class="col-12">
+                                                            <span class="d-flex align-items-center justify-content-between gap-2 w-100">
+                                                                <span class="">
+                                                                    <label for="misura" class="form-label">1 unità della confezione corrisponde
+                                                                        a</label>
+                                                                </span>
+                                                                <span class="w-25">
+                                                                    <input type="text" class="form-control form-control-sm">
+                                                                </span>
+                                                                <span class>
+                                                                    <label for="" class="form-label">unità di questo articolo</label>
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                
+                                
+                                        </div>
+                                    </div>
+                                   
                             </div>
                             
                         </div>    
@@ -324,141 +457,7 @@
                 </div>        
             </div>   
         </section>
-        <section id="tab_pre_footer">
-            <div class="container bg-white mt-1">
-                <!-- Tab Giacenza -->
-                <div class="row">
-                    <div class="col-lg-6 col-sm-12">
-                        <div class="shadow-lg p-3 sfondo_giacenza blocco_quattro" style="height:274px; overflow:hidden;">
-                            <h3 class="fw-bold">Giacenza</h3>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="d-flex justify-content-between mb-3 gap-1">
-                                        <span class="text-end w-100 me-1">
-                                            <label for="giacenza" class="form-label">Giacenza</label>
-                                        </span>
-                                        <input type="number" class="form-control form-control-sm" id="giacenza" placeholder="0">
-                                    </div>
-                                    <div class="d-flex justify-content-between mb-3 gap-1">
-                                        <span class="text-end w-100 me-1">
-                                            <label for="scorta" class="form-label">Scorta minima</label>
-                                        </span>
-                                        <input class="form-control form-control-sm" type="number" id="scorta" placeholder="0">
-                                    </div>
-                                    <div class="d-flex mb-3 align-items-center gap-1">
-                                        <span class="text-end w-100 me-1">
-                                            <label for="quantitativo_minimo_ordinabile" class="form-label">Quantità minima vendibile e ordinabile</label>
-                                        </span>
-                                        <input style="height: 30px;" class="form-control form-control-sm" type="number"
-                                            id="quantitativo_minimo_ordinabile" placeholder="0">
-                                    </div>
-                                    <div class="d-flex gap-1 align-items-center mb-2 gap-1">
-                                        <span class="text-end w-100 me-1">
-                                            <label for="quantitativo_per_ogni_collo" class="form-label">Quantità per ogni collo</label>
-                                        </span>
-                                        <input style="height: 30px;" class="form-control form-control-sm" type="number"
-                                            id="quantitativo_per_ogni_collo" placeholder="0">
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="d-flex justify-content-between mb-3 gap-1">
-                                        <span class="text-end w-100 me-1">
-                                            <label for="prenotati" class="form-label">Prenotati</label>
-                                        </span>
-                                        <input class="form-control form-control-sm" type="text" id="prenotati" disabled placeholder="0">
-                                    </div>
-                                    <div class="d-flex justify-content-between gap-1">
-                                        <span class="text-end w-100 me-1">
-                                            <label for="riordino" class="form-label">In riordino</label>
-                                        </span>
-                                        <input class="form-control form-control-sm" type="text" id="riordino" disabled placeholder="0">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn btn-sm btn-secondary" id="verifica">Verifica</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Tab Unità di misura-->
-                    <div class="col-lg-6 col-sm-12">
-                        <div class="shadow-lg col-12 p-3 sfondo_un_mis blocco_quattro">
-                            <h3 class="fw-bold ">Unità di misura</h3>
-                            <div class="row align-items-start" style="height:60px; overflow:hidden;">
-                                <div class="col-12">
-                                    <span class="d-flex align-items-center justify-content-around gap-2 w-100">
-                                        <span>
-                                            <label for="misura" class="form-label">Unità di misura</label>
-                                        </span>
-                                        <span class="w-25">
-                                            <select name="misure" id="misure" class="form-select form-select-sm">
-                                                <option value="1">Pz</option>
-                                                <option value="2">N.</option>
-                                                <option value="3">L.</option>
-                                            </select>
-                                        </span>
-                                        <span>
-                                            <label for="misure_vendita" class="form-label">Unità di misura di vendita <br>(se
-                                                differente)</label>
-                                        </span>
-                                        <span class="w-25">
-                                            <select name="misure_vendita" id="misure_vendita" class="form-select form-select-sm">
-                                                <option value="1">Invariata</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
-                                        </span>
-                                    </span>
-                                </div>
-        
-                            </div>
-        
-                        </div>
-        
-                        <!-- Tab Conversione ad articolo singolo -->
-                        <div class="shadow-lg col-12 p-3 mt-1 sfondo_convers blocco_quattro"
-                            style="height:150px; overflow:hidden;">
-                            <h3 class="fw-bold ">Conversione da confezione ad articolo singolo</h3>
-                            <div class="row align-items-start">
-                                <div class="col-12">
-                                    <span class="d-flex align-items-center justify-content-between gap-2 ">
-                                        <span class="">
-                                            <label for="misura" class="form-label me-lg-4">Codice articolo della
-                                                confezione</label>
-                                        </span>
-                                        <span class="w-25">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </span>
-                                        <span>
-                                            <button type="button" class="btn btn-sm btn-secondary">Cerca confezione</button>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="row align-items-start mt-2">
-                                <div class="col-12">
-                                    <span class="d-flex align-items-center justify-content-between gap-2 w-100">
-                                        <span class="">
-                                            <label for="misura" class="form-label">1 unità della confezione corrisponde
-                                                a</label>
-                                        </span>
-                                        <span class="w-25">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </span>
-                                        <span class>
-                                            <label for="" class="form-label">unità di questo articolo</label>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-        
-                </div>
-            </div>
-        </section>
+      
         <!-- Salva - Stampa - Annulla - Faq -->
         <section id="footer">
             <div class="container mt-3 mb-5">
